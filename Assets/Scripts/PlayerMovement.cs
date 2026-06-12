@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 32f;
+    public float speed = 35f; //any slower or faster objects react weird
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
