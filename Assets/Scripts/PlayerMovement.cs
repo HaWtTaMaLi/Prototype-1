@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public float speed = 32f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //move vehicle forward
-        transform.Translate(0, 0, 1);
+        //transform.Translate(0, 0, speed);
+        transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 }
